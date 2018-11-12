@@ -37,5 +37,8 @@
     "simple-line-icons": "^2.4.1",
     "typescript": "^3.1.4",
     "zone.js": "^0.8.26"
+  },
+  "scripts": {
+    "postinstall": "node node_modules/isys-fe/ng-add-pug-loader.js"
   }
 }
