@@ -1,3 +1,33 @@
 {
-  "extends": "../tsconfig.json"
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+      "base": ["src/bootstrap/base"],
+      "bootstrap/*": ["node_modules/isys-fe/src/bootstrap/*"],
+      "components/*": [
+        "src/components/*",
+        "node_modules/isys-fe/src/components/*"
+      ],
+      "environment": ["src/environments/environment"],
+    }
+  },
+    "include": [
+      "src/**/*",
+      "node_modules/isys-fe/src/**/*"
+    ]
 }
