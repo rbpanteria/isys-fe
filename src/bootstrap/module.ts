@@ -55,6 +55,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
   ],
   exports: [
+    AppComponent,
     CommonModule,
     FontAwesomeModule,
     FormsModule,
@@ -63,9 +64,6 @@ const routes: Routes = [
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: HttpResponseInterceptor, multi: true }
-  ],
-  bootstrap: [
-    AppComponent
   ]
 })
 
