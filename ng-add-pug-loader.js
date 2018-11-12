@@ -3,7 +3,7 @@
  * @see https://github.com/danguilherme/ng-cli-pug-loader
  */
 const fs = require('fs');
-const commonCliConfig = 'node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs/common.js';
+const commonCliConfig = '../../node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs/common.js';
 const pugRule = '{ test: /.pug$/, use: [ { loader: "apply-loader" }, { loader: "pug-loader" } ] },';
 
 fs.readFile(commonCliConfig, (err, data) => {
