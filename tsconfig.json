@@ -27,7 +27,7 @@
     }
   },
     "include": [
-      "../../src/**/*",
-      "node_modules/isys-fe/src/**/*"
+      "src/**/*",
+      "../../src/**/*"
     ]
 }
