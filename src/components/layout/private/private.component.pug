@@ -1,0 +1,40 @@
+header.nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(routerLink='/#') Info+
+
+.sidebar
+  nav.sidebar-nav
+    ul.nav
+      li.nav-item
+        a.nav-link(routerLink='/dashboard')
+          | Dashboard
+      li.nav-item.nav-dropdown
+        a.nav-link.nav-dropdown-toggle(href="#")
+          |  Administrations
+        ul.nav-dropdown-items
+          li.nav-item
+            a.nav-link(routerLink='/administration/user')
+              |  Users
+          li.nav-item
+            a.nav-link(routerLink='/administration/role')
+              |  Roles
+      li.nav-item.nav-dropdown
+        a.nav-link.nav-dropdown-toggle(href="#")
+          |  Diagnostics
+        ul.nav-dropdown-items
+          li.nav-item
+            a.nav-link(routerLink='/diagnostic/patient')
+              |  Patients
+          li.nav-item
+            a.nav-link(routerLink='/diagnostic/doctor')
+              |  Doctors
+          li.nav-item
+            a.nav-link(routerLink='/diagnostic/service')
+              |  Services
+          li.nav-item
+            a.nav-link(routerLink='/diagnostic/result')
+              |  Results
+  button.sidebar-minimizer.brand-minimizer(type='button')
+
+main.main
+  .container-fluid
+    router-outlet

@@ -1,0 +1,66 @@
+.row
+  .col-12
+    .card
+      .card-header
+        .row
+          .col-md-8.align-self-center
+            | Users Table
+          .col-md-4
+            .input-group
+              .input-group-prepend
+                span.input-group-text
+                  i.fa.fa-search
+              input.form-control(placeholder='Search' type='text')
+
+      .card-body
+        table.table.table-responsive-sm.table-hover.mb-0
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First Name
+              th(scope='col') Middle Name
+              th(scope='col') Last Name
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td Otto
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td Thornton
+            tr
+              th(scope='row') 3
+              td Larry
+              td Bird
+              td Bird
+
+button.btn.btn-primary(type='button' data-toggle='modal' data-target='.docs-example-modal-lg') Large modal
+.modal.fade.docs-example-modal-lg(tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true')
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        h5.modal-title Modal title
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+
+        form
+          .row
+            .col-lg-4
+              .form-group
+                label(for='formGroupExampleInput') First Name
+                input#formGroupExampleInput.form-control(type='text')
+            .col-lg-4
+              .form-group
+                label(for='formGroupExampleInput2') Middle Name
+                input#formGroupExampleInput2.form-control(type='text')
+            .col-lg-4
+              .form-group
+                label(for='formGroupExampleInput2') Last Name
+                input#formGroupExampleInput2.form-control(type='text')
+      .modal-footer
+        button.btn.btn-primary(type='button') Save changes
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
